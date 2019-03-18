@@ -17,6 +17,7 @@ class UserProfileSerializer(serializers.ModelSerializer):
         extra_kwargs = {
             'password': {'write_only': True}
         }
+         
 
     def create(self, validated_data):
         """Used to create a new user."""
